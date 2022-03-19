@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './Components/Menubar/Menubar';
+import Test from './Components/Test/Test';
 
 function App() {
+  const count = () => {
+  
+  };
   return (
-    <div className="App">
-      {/* <h1 className='text-success text-white bg-primary p-3 m-5 '>Hello! This is working App.</h1> */}
-      <Menubar country='Bangladesh'></Menubar>
+    <div className="App"> 
+      <Test count={count}></Test>
     </div>
   );
 }
