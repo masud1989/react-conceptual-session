@@ -1,0 +1,8 @@
+.product-container{
+    border: 3px solid tomato;
+    border-radius: 10px;
+    margin: 10px;
+}
+.product-container img{
+    width: 250px;
+}

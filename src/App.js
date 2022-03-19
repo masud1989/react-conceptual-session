@@ -2,15 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menubar from './Components/Menubar/Menubar';
-import Test from './Components/Test/Test';
+import AllProducts from './Components/AllProducts/AllProducts';
+import { useState } from 'react';
+
 
 function App() {
-  const count = () => {
-  
+  const [count, setCount] = useState(0);
+  const setCartCount = () =>{
+    setCount(count + 1);
   };
   return (
     <div className="App"> 
-      <Test count={count}></Test>
+      <Menubar count={count}></Menubar>
+      <AllProducts setCartCount={setCartCount} ></AllProducts>
     </div>
   );
 }
